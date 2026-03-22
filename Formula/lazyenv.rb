@@ -11,7 +11,7 @@ class Lazyenv < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/lazynop/lazyenv/releases/download/v0.4.3/lazyenv_0.4.3_darwin_amd64.tar.gz"
-      sha256 "e0a82a563638de35a4d0ac8ec4e84a83126046fe6a39e9838d9e8552f60a0fac"
+      sha256 "43b49f9b6175145cd4a904f66dd1d6e5ea57ae5ce98eed66c3c7723a889bc2e7"
 
       define_method(:install) do
         bin.install "lazyenv"
@@ -19,7 +19,7 @@ class Lazyenv < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/lazynop/lazyenv/releases/download/v0.4.3/lazyenv_0.4.3_darwin_arm64.tar.gz"
-      sha256 "f0cff5471168931df3443a21f173464c2598da387e078f12ac61747726b6dd48"
+      sha256 "62480bcf18da6fda5da8143fe03257773b8b6028f37838fd3275521871139c46"
 
       define_method(:install) do
         bin.install "lazyenv"
@@ -30,14 +30,14 @@ class Lazyenv < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/lazynop/lazyenv/releases/download/v0.4.3/lazyenv_0.4.3_linux_amd64.tar.gz"
-      sha256 "0f020f9516370e90240c30e4c96ea3eef7812b9373ffc734649410374d1740b1"
+      sha256 "7fff35cc9b40d0415aab9c1066a2207284506efd935792ff9357a4dccea899b0"
       define_method(:install) do
         bin.install "lazyenv"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/lazynop/lazyenv/releases/download/v0.4.3/lazyenv_0.4.3_linux_arm64.tar.gz"
-      sha256 "6536187ae6d38037d3cc964de0da2bd5fc0dd88415af7fdbab96302aef2cafb8"
+      sha256 "2e602c5192c8e86f4f5b4d0f4c08c3f73f89c06f7f917d11297902dca2ea9e49"
       define_method(:install) do
         bin.install "lazyenv"
       end
