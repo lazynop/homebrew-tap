@@ -5,21 +5,21 @@
 class Lazyenv < Formula
   desc "TUI for managing .env files"
   homepage "https://lazynop.github.io/lazyenv/"
-  version "0.5.1"
+  version "0.5.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lazynop/lazyenv/releases/download/v0.5.1/lazyenv_0.5.1_darwin_amd64.tar.gz"
-      sha256 "d6f757a9f0d42a2ae3344135f6543517f03f9a896c8719b457ca6706825f8e1a"
+      url "https://github.com/lazynop/lazyenv/releases/download/v0.5.2/lazyenv_0.5.2_darwin_amd64.tar.gz"
+      sha256 "57c284857410af9dfe3ef13267906a3024054204babfbd7d9436b9be01afc8fa"
 
       define_method(:install) do
         bin.install "lazyenv"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lazynop/lazyenv/releases/download/v0.5.1/lazyenv_0.5.1_darwin_arm64.tar.gz"
-      sha256 "71a8875ea5e53b31d506e932def4af1c1a661c5f6d8425c596e2a65f96f3398b"
+      url "https://github.com/lazynop/lazyenv/releases/download/v0.5.2/lazyenv_0.5.2_darwin_arm64.tar.gz"
+      sha256 "9ade15c2f207820b0f1dcc798a77aebf30efe5ca82639a3c5eaeb9a6ace91ed1"
 
       define_method(:install) do
         bin.install "lazyenv"
@@ -29,15 +29,15 @@ class Lazyenv < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lazynop/lazyenv/releases/download/v0.5.1/lazyenv_0.5.1_linux_amd64.tar.gz"
-      sha256 "b86568d10c76760c58cea4e8caad55b4c98959640c841d8420275c434e417b42"
+      url "https://github.com/lazynop/lazyenv/releases/download/v0.5.2/lazyenv_0.5.2_linux_amd64.tar.gz"
+      sha256 "9f0ac4b9be404df57a5d54bd2164d201fba4b16ce93e99d7f9872684f0f7bda3"
       define_method(:install) do
         bin.install "lazyenv"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lazynop/lazyenv/releases/download/v0.5.1/lazyenv_0.5.1_linux_arm64.tar.gz"
-      sha256 "dfeb396da2356404432997b68c0b10585a3f58792b9ba8807addbdfefcac2feb"
+      url "https://github.com/lazynop/lazyenv/releases/download/v0.5.2/lazyenv_0.5.2_linux_arm64.tar.gz"
+      sha256 "e19c5bfe7ca91fa25c5d1310a9051bb65fa3790f4de2d213b9959f2cf4433b21"
       define_method(:install) do
         bin.install "lazyenv"
       end
